@@ -22,8 +22,5 @@ int main() {
     Myclass a2(6);
     a1 + a2;
 
-    const int num = 5;
-
-    cout << num << endl;
     return 0;
 }
