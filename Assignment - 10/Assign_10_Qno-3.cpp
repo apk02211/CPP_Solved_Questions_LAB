@@ -112,8 +112,5 @@ int main() {
                    "Gautam", 9991234567, "Delhi", "Male");
     pg.display();
 
-    double c = 2000.00;
-    cout << c;
-
     return 0;
 }
