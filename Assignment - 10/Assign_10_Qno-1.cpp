@@ -1,7 +1,3 @@
-/* Write a program using the concept of inheritance, constructors and over-riding to find
-a) Base Class-Area of a rectangular room
-b) Child Class- Volume of a rectangular room.*/
-
 #include <iostream>
 using namespace std;
 
