@@ -32,11 +32,11 @@ public:
 
 int main() {
     Rectangle r1;
+    r1.display();
     Rectangle r2(4);
+    r2.display();
     Rectangle r3(5, 3);
-
-    cout << "Area = " << r1.area() << endl;
-    cout << "Area = " << r2.area() << endl;
-    cout << "Area = " << r3.area() << endl;
+    r3.display();
+    
     return 0;
 }
