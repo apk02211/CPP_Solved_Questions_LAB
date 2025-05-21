@@ -42,7 +42,7 @@ void display(A objA, B objB) {
     if (objB.checkPrime(objA))
         cout << objA.num << " is prime number" << endl;
     else
-        cout << objA.num << " is not Prime" << endl;
+        cout << objA.num << " is not Prime number" << endl;
 }
 
 int main() {
