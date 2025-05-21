@@ -10,21 +10,21 @@ public:
        cin >> num;
     }
 
-    friend void calulate(MyCube);
+    friend void calculate(MyCube);
 };
 
-void calulate(MyCube c) {
+void calculate(MyCube c) {
     c.area = 6 * c.num * c.num;
     c.volume = c.num * c.num * c.num;
 
     cout << "Area of cube = " << c.area << endl;
-    cout << "Volume of volume = " << c.volume << endl;
+    cout << "Volume of cube = " << c.volume << endl;
 }
 
 int main() {
     MyCube cube;
     cube.input();
-    calulate(cube);
+    calculate(cube);
     return 0;
 }
 
