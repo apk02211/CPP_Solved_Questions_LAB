@@ -11,11 +11,11 @@ public:
          cin >> name;
          cout << "Enter your age: ";
          cin >> age;
-    };
+    }
     void display() {
          cout << "Name: " << name << endl;
          cout << "Age: " << age << endl;
-    }; 
+    }
 };
 
 
