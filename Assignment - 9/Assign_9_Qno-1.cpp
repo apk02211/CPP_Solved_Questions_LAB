@@ -1,34 +1,31 @@
 #include <iostream>
 using namespace std;
 
-class BaseClass {
+class Person {
 public:
     string name;
     int age;
 
-    void getData();
-    void display();
+    void getData() {
+         cout << "Enter your name: ";
+         cin >> name;
+         cout << "Enter your age: ";
+         cin >> age;
+    };
+    void display() {
+         cout << "Name: " << name << endl;
+         cout << "Age: " << age << endl;
+    }; 
 };
 
-void BaseClass::getData() {
-    cout << "Enter your name: ";
-    cin >> name;
-    cout << "Enter your age: ";
-    cin >> age;
-}
 
-void BaseClass::display() {
-    cout << "Name: " << name << endl;
-    cout << "Age: " << age << endl;
-}
-
-class DerivedClass : public BaseClass {
+class Employee : public Person {
 public:
     float salary;
     string address;
 
     void getData() {
-        BaseClass::getData();
+        Person::getData();
         cout << "Enter your salary: ";
         cin >> salary;
         cout << "Enter your address: ";
@@ -36,14 +33,14 @@ public:
     }
 
     void display() {
-        BaseClass::display();
+        Person::display();
         cout << "Salary: " << salary << endl;
         cout << "Address: " << address << endl;
     }
 };
 
 int main() {
-    DerivedClass obj;
+    Employee obj;
     obj.getData();
     obj.display();
     return 0;
