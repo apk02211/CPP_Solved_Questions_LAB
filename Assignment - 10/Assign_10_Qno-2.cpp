@@ -2,7 +2,7 @@
 using namespace std;
 
 class Student {
-private:
+protected:
     string name;
     int roll;
     long vid;
