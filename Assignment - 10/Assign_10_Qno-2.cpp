@@ -1,9 +1,8 @@
 #include <iostream>
-#include <string>
 using namespace std;
 
 class Student {
-protected:
+private:
     string name;
     int roll;
     long vid;
